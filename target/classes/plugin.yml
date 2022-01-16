@@ -1,0 +1,8 @@
+name: Neptune
+main: cc.bigfatman.anticheat.Neptune
+version: 0.0.1
+commands:
+  neptune:
+    aliases:
+      - ac
+      - anticheat
