@@ -2,6 +2,8 @@ package cc.bigfatman.anticheat.data.profiles;
 
 import cc.bigfatman.anticheat.check.CheckManager;
 import cc.bigfatman.anticheat.data.Profile;
+import cc.bigfatman.anticheat.data.processor.PositionProcessor;
+import cc.bigfatman.anticheat.data.processor.RotationProcessor;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.Bukkit;
@@ -18,6 +20,11 @@ public class PlayerProfile implements Profile {
 
     private CheckManager checkManager;
 
+    private PositionProcessor positionProcessor;
+    private RotationProcessor rotationProcessor;
+
+    private ActionProfile actionProfile;
+
     public List<UUID> verboseAlerts = new ArrayList<>();
     public List<UUID> alerts = new ArrayList<>();
 
@@ -26,5 +33,12 @@ public class PlayerProfile implements Profile {
         this.player = Bukkit.getPlayer(uuid);
 
         this.checkManager = new CheckManager(this);
+
+        this.positionProcessor = new PositionProcessor(this);
+        this.rotationProcessor = new RotationProcessor(this);
+
+        this.actionProfile = new ActionProfile(this);
+
+        if (player.hasPermission("neptune.staff.alerts")) alerts.add(player.getUniqueId());
     }
 }

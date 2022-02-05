@@ -1,6 +1,7 @@
 package cc.bigfatman.anticheat.data;
 
 import cc.bigfatman.anticheat.Neptune;
+import cc.bigfatman.anticheat.data.profiles.ActionProfile;
 import cc.bigfatman.anticheat.data.profiles.PlayerProfile;
 
 import java.util.Arrays;
@@ -18,7 +19,7 @@ public class ProfileManager {
     public ProfileManager(Neptune plugin) {
         this.plugin = plugin;
 
-        profiles = Arrays.asList(PlayerProfile.class);
+        profiles = Arrays.asList(PlayerProfile.class, ActionProfile.class);
     }
 
     public void addPlayer(UUID uuid) {

@@ -7,7 +7,7 @@ import cc.bigfatman.anticheat.packet.NeptunePacket;
 import cc.bigfatman.anticheat.packet.wrapped.client.CFlyingPacket;
 import org.bukkit.Bukkit;
 
-@CheckData(checkName = "ImpossiblePitch", checkID = "ImpossiblePitch")
+@CheckData(checkName = "ImpossiblePitch", checkID = "A")
 public class ImpossiblePitch extends Check {
 
     public ImpossiblePitch(PlayerProfile playerProfile) {
@@ -22,7 +22,7 @@ public class ImpossiblePitch extends Check {
             float pitch = Math.abs(cFlyingPacket.pitch);
 
             if (pitch > 90.f) {
-                verbose(pitch + "> 90.f", 50);
+                verbose(pitch + "+= 90.f", 50);
             }
         }
     }

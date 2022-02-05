@@ -20,10 +20,10 @@ public class VerboseCommand extends AbstractCommand {
 
         if (playerProfile.getVerboseAlerts().contains(player.getUniqueId())) {
             playerProfile.getVerboseAlerts().remove(player.getUniqueId());
-            player.sendMessage(MessageUtils.translateColour("&5&l[NAC] &fYou have &cdisabled &fverbose alerts."));
+            player.sendMessage(MessageUtils.translateColour("&cYou have disabled verbose alerts."));
         } else if (!playerProfile.getVerboseAlerts().contains(player.getUniqueId())) {
             playerProfile.getVerboseAlerts().add(player.getUniqueId());
-            player.sendMessage(MessageUtils.translateColour("&5&l[NAC] &fYou have &atoggled &fverbose alerts."));
+            player.sendMessage(MessageUtils.translateColour("&aYou have toggled verbose alerts."));
         }
     }
 }

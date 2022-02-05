@@ -46,11 +46,11 @@ public class NeptuneCommand implements CommandExecutor {
 
     public void helpMessage(CommandSender commandSender) {
         commandSender.sendMessage(MessageUtils.translateColour(""));
-        commandSender.sendMessage(MessageUtils.translateColour("&7* &5&lNeptune &d[AntiCheat] &7* "));
+        commandSender.sendMessage(MessageUtils.translateColour("&7* &B&lNeptune &3[AntiCheat] &7* "));
         commandSender.sendMessage(MessageUtils.translateColour(""));
         for (int i = 0; i < commands.size(); i++) {
             if (!commandSender.hasPermission(commands.get(i).permission)) return;
-            commandSender.sendMessage(MessageUtils.translateColour("&7* &5/Neptune " + commands.get(i).commandName + " &7- " + commands.get(i).description));
+            commandSender.sendMessage(MessageUtils.translateColour("&7* &B/Neptune " + commands.get(i).commandName + " &7- " + commands.get(i).description));
         }
         commandSender.sendMessage("");
     }

@@ -11,6 +11,7 @@ public abstract class PacketInjector {
     public abstract void inject(Player player) throws Exception;
     public abstract void eject(Player player) throws Exception;
 
+
     public static <T> FieldAccessor<T> fetchField(String className, Class<T> fieldType, int index) {
         return ReflectionUtil.getFieldSafe(ReflectionUtil.NMS_PREFIX + "." + className, fieldType, index);
     }

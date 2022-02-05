@@ -1,6 +1,7 @@
 package cc.bigfatman.anticheat.listener;
 
 import cc.bigfatman.anticheat.Neptune;
+import cc.bigfatman.anticheat.data.profiles.PlayerProfile;
 import cc.bigfatman.anticheat.packet.injection.impl.ModernInjector;
 import lombok.Getter;
 import lombok.SneakyThrows;
@@ -21,7 +22,9 @@ public class ConnectionListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
+        PlayerProfile playerProfile = plugin.getProfileManager().getPlayerProfile(player.getUniqueId());
 
+        //injecting the player into the packet stream/data profile
         plugin.getPacketInjector().inject(player);
         plugin.getProfileManager().addPlayer(player.getUniqueId());
     }
@@ -30,7 +33,13 @@ public class ConnectionListener implements Listener {
     @EventHandler
     public void onQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
+        PlayerProfile playerProfile = plugin.getProfileManager().getPlayerProfile(player.getUniqueId());
 
+        //Stops memory leaks
+        if (playerProfile.alerts.contains(player.getUniqueId())) playerProfile.alerts.remove(player.getUniqueId());
+        if (playerProfile.verboseAlerts.contains(player.getUniqueId())) playerProfile.verboseAlerts.remove(player.getUniqueId());
+
+        //removing players packets/data
         plugin.getPacketInjector().eject(player);
         plugin.getProfileManager().removePlayer(player.getUniqueId());
     }

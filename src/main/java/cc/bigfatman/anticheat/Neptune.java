@@ -9,6 +9,7 @@ import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -34,7 +35,7 @@ public final class Neptune extends JavaPlugin {
         this.packetInjector = new ModernInjector();
 
         //Cleaner and better way to register events
-        Arrays.asList(new ConnectionListener(this)).forEach(listener -> getServer().getPluginManager().registerEvents(listener, this));
+        Collections.singletonList(new ConnectionListener(this)).forEach(listener -> getServer().getPluginManager().registerEvents(listener, this));
 
         //Registering each profile we will need.
         this.profileManager = new ProfileManager(this);

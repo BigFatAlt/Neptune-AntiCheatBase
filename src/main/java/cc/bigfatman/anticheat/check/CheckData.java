@@ -13,6 +13,9 @@ public @interface CheckData {
     String checkID() default "";
     String description() default "";
 
+    int banVl() default 20;
+
     boolean enabled() default true;
+    boolean punishable() default false;
     boolean rubberband() default false;
 }

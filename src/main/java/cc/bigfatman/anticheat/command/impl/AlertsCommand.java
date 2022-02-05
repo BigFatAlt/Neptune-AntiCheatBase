@@ -20,10 +20,10 @@ public class AlertsCommand extends AbstractCommand {
 
         if (playerProfile.getAlerts().contains(player.getUniqueId())) {
             playerProfile.getAlerts().remove(player.getUniqueId());
-            player.sendMessage(MessageUtils.translateColour("&5&l[NAC] &fYou have &cdisabled &falerts."));
+            player.sendMessage(MessageUtils.translateColour("&cYou have disabled alerts."));
         } else if (!playerProfile.getAlerts().contains(player.getUniqueId())) {
             playerProfile.getAlerts().add(player.getUniqueId());
-            player.sendMessage(MessageUtils.translateColour("&5&l[NAC] &fYou have &atoggled &falerts."));
+            player.sendMessage(MessageUtils.translateColour("&aYou have toggled alerts."));
         }
     }
 }
