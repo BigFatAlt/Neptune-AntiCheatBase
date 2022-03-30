@@ -12,7 +12,7 @@ public class ActionProfile implements Profile {
     private final PlayerProfile playerProfile;
 
     private boolean digging;
-    private int hitTicks;
+    private int hitTicks, totalTicks;
 
     public ActionProfile(PlayerProfile playerProfile) {
         this.playerProfile = playerProfile;
@@ -37,5 +37,6 @@ public class ActionProfile implements Profile {
 
     public void onFlying(CFlyingPacket cFlyingPacket) {
         hitTicks++;
+        totalTicks++;
     }
 }

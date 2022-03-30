@@ -40,7 +40,7 @@ public class KillAuraB extends Check {
 
                 double angle = MathUtils.angle(direction, origin);
 
-                if (angle < 0.9) {
+                if (angle < 0.9 && playerProfile.getPositionProcessor().distXZ > 0.12f) {
                     verbose("angle=" + angle, 5);
                 } else decreaseThreshold(1f);
             }
