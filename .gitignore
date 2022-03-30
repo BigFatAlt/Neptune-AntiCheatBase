@@ -1,0 +1,10 @@
+
+.idea/workspace.xml
+.idea/compiler.xml
+.idea/discord.xml
+.idea/misc.xml
+.idea/Neptune-AntiCheatBase.iml
+target/classes/cc/bigfatman/anticheat/check/CheckManager.class
+*.class
+*.class
+*.lst

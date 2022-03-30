@@ -3,6 +3,7 @@ package cc.bigfatman.anticheat.check;
 import cc.bigfatman.anticheat.check.impl.ImpossiblePitch;
 import cc.bigfatman.anticheat.check.impl.autoclicker.AutoclickerA;
 import cc.bigfatman.anticheat.check.impl.badpackets.BadPacketsA;
+import cc.bigfatman.anticheat.check.impl.fly.FlyA;
 import cc.bigfatman.anticheat.check.impl.killaura.KillAuraA;
 import cc.bigfatman.anticheat.check.impl.killaura.KillAuraB;
 import cc.bigfatman.anticheat.check.impl.killaura.KillAuraC;
@@ -25,6 +26,7 @@ public class CheckManager {
                 .put(KillAuraA.class, new KillAuraA(playerProfile))
                 .put(KillAuraB.class, new KillAuraB(playerProfile))
                 .put(KillAuraC.class, new KillAuraC(playerProfile))
+                .put(FlyA.class, new FlyA(playerProfile))
                 .put(ImpossiblePitch.class, new ImpossiblePitch(playerProfile))
                 .build();
     }

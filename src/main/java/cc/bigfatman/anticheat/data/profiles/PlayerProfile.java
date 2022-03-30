@@ -2,6 +2,7 @@ package cc.bigfatman.anticheat.data.profiles;
 
 import cc.bigfatman.anticheat.check.CheckManager;
 import cc.bigfatman.anticheat.data.Profile;
+import cc.bigfatman.anticheat.data.processor.CollisionProcessor;
 import cc.bigfatman.anticheat.data.processor.PositionProcessor;
 import cc.bigfatman.anticheat.data.processor.RotationProcessor;
 import lombok.Getter;
@@ -22,6 +23,7 @@ public class PlayerProfile implements Profile {
 
     private PositionProcessor positionProcessor;
     private RotationProcessor rotationProcessor;
+    private CollisionProcessor collisionProcessor;
 
     private ActionProfile actionProfile;
 
@@ -36,6 +38,7 @@ public class PlayerProfile implements Profile {
 
         this.positionProcessor = new PositionProcessor(this);
         this.rotationProcessor = new RotationProcessor(this);
+        this.collisionProcessor = new CollisionProcessor(this);
 
         this.actionProfile = new ActionProfile(this);
 

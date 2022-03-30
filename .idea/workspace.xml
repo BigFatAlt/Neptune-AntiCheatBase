@@ -4,24 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0d238c-ce32-46c0-8b23-1b88159fdfaa" name="Changes" comment="" />
+    <list default="true" id="4e0d238c-ce32-46c0-8b23-1b88159fdfaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Neptune-AntiCheatBase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/check/impl/fly/FlyA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/data/processor/CollisionProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/check/CheckManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/check/CheckManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/check/impl/killaura/KillAuraB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/check/impl/killaura/KillAuraB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/data/processor/PositionProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/data/processor/PositionProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/data/profiles/PlayerProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/data/profiles/PlayerProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/util/MiscUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/util/MiscUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/Neptune.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/Neptune.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/Check.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/CheckData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/CheckData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/CheckManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/CheckManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/impl/ImpossiblePitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/check/impl/ImpossiblePitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/command/NeptuneCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/command/NeptuneCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/command/impl/AlertsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/command/impl/AlertsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/command/impl/VerboseCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/command/impl/VerboseCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/data/ProfileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/data/ProfileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/data/profiles/PlayerProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/data/profiles/PlayerProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/listener/ConnectionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/listener/ConnectionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/packet/injection/PacketInjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/packet/injection/PacketInjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/packet/injection/impl/ModernInjector$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/packet/injection/impl/ModernInjector$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/packet/injection/impl/ModernInjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/packet/injection/impl/ModernInjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/util/MiscUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cc/bigfatman/anticheat/util/MiscUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="24iAHOn4traerexGAhxaWs5jUwJ" />
   <component name="ProjectViewState">
@@ -31,8 +62,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cc/bigfatman/anticheat/util" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Armand\Desktop\ap\Neptune-AntiCheatBase\src\main\java\cc\bigfatman\anticheat\util" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,5 +96,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
