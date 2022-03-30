@@ -10,8 +10,8 @@ import cc.bigfatman.anticheat.packet.wrapped.client.CFlyingPacket;
 @CheckData(checkName = "AutoClicker", checkID = "CPS")
 public class AutoclickerA extends Check {
 
-    public int maxCPS = 20;
-    public int swings, movements;
+    private int maxCPS = 20;
+    private int swings, movements;
 
     public AutoclickerA(PlayerProfile playerProfile) {
         super(playerProfile);
